@@ -21,7 +21,7 @@ class RecipesController < ApplicationController
   
   def recipe_params 
     params.require(:recipe).permit(:title, ingredients_attributes: [:name, :quantity])
-    puts params[ingredients_attributes]
+    puts params[:ingredients_attributes]
     
   end
   
