@@ -3,8 +3,8 @@
   <%= f.label :title %>
   <%= f.text_field :title %><br>
  
-  <%= f.fields_for :ingredients do |addr| %>
-    <%= addr.label :street_address_1 %>
+  <%= f.fields_for :ingredients do |ingredients| %>
+    <%= ing.label :street_address_1 %>
     <%= addr.text_field :street_address_1 %><br>
  
     <%= addr.label :street_address_2 %>
